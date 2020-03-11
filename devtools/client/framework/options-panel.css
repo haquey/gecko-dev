@@ -49,24 +49,38 @@
   border: none;
 }
 
+.options-groupbox:nth-child(1) {
+  max-width: 100px;
+  position: relative;
+}
+
+
 .options-vertical-pane fieldset legend {
   font-size: 1.4rem;
   margin-inline-start: -15px;
-  margin-bottom: 3px;
   cursor: default;
+  position: absolute;
+  width: 200px;
+  margin-top: -27px;
 }
 
 .options-vertical-pane fieldset + fieldset {
-  margin-top: 1rem;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+ }
 
 .options-groupbox {
   margin-inline-start: 15px;
   padding: 2px;
+  margin-top: 27px;
+
 }
 
 .options-groupbox label {
   display: flex;
+  float: left;
   padding: 4px 0;
   align-items: center;
 }
